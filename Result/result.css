@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    height: 100vh;
+
+  }
+
+:root{
+    --black-color: black;
+    --bg-color-1:#221C69;
+    --bg-color-2:#080942;
+    --bg-color-3:#431C76;
+    --bg-color-4:#663B94;
+  }
+  
+ol.list {
+    list-style-type: upper-roman;
+  }
+
+.container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: linear-gradient(var(--black-color),var(--bg-color-2),var(--black-color));
+}
+
+.header{
+    height: 10vh;
+    padding: 1rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px yellow;
+}
+.main-container{
+    width: 60%;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-container .cont-subhead{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-container .cont-subhead .head{
+    font-size: 2rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px yellow;
+}
+.main-container .cont-subhead .score{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.question-cont{
+    text-align: center;
+    margin: 0.5rem; 
+    width: 60%;  
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.answers .option{
+    border: 2px solid white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius:1.5rem ;
+}
+.option.sel{
+    border: 3px solid yellow;
+    color: yellow;
+}
+.option.crrt{
+    border: 3px solid green;
+    color: green;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question img{
+    max-inline-size: 100%;
+    border-radius: 1rem;
+    block-size: auto;
+    aspect-ratio: 4/3;
+    object-fit: contain/cover;
+    object-position: top center;
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+a{
+    all: unset;
+}
+
