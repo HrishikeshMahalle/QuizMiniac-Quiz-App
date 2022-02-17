@@ -1,21 +1,5 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    font-family: sans-serif;
-    height: 100vh;
-
-  }
-
-:root{
-    --black-color: black;
-    --bg-color-1:#221C69;
-    --bg-color-2:#080942;
-    --bg-color-3:#431C76;
-    --bg-color-4:#663B94;
-  }
+@import url(/Component-Css/general.css);
+@import url(/Component-Css/header.css);
   
 ol.list {
     list-style-type: upper-roman;
@@ -23,25 +7,13 @@ ol.list {
 
 .container{
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: white;
     background: linear-gradient(var(--black-color),var(--bg-color-2),var(--black-color));
 }
 
-.header{
-    height: 10vh;
-    padding: 1rem;
-    font-size: 2rem;
-    text-shadow: 2px 2px 2px yellow;
-}
 .main-container{
     width: 60%;
     border: solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
@@ -52,19 +24,18 @@ ol.list {
 }
 .question-cont{
     text-align: center;
+    display: flex;
+    align-items: center;
     margin: 0.5rem; 
     width: 60%;  
-    display: flex;
     font-size: 1.2rem;
-    flex-direction: column;
     gap:1.5rem;
 }
 .answers{
-    display: flex;
-    flex-direction: column;
+    width: 80%;
     gap: 0.5rem;
 }
-.answers .option{
+option{
     border: 2px solid white;
     font-size: 1.2rem;
     padding: 1rem;
@@ -75,12 +46,8 @@ ol.list {
     color: yellow;
 }
 
-.question{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.question img{
+
+.question-cont img{
     max-inline-size: 100%;
     border-radius: 1rem;
     block-size: auto;

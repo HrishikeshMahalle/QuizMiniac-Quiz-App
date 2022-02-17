@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    height: 100vh;
+
+  }
+
+:root{
+    --black-color: black;
+    --bg-color-1:#221C69;
+    --bg-color-2:#080942;
+    --bg-color-3:#431C76;
+    --bg-color-4:#663B94;
+  }
+
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
