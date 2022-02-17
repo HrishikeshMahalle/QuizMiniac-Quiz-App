@@ -1,47 +1,20 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    font-family: sans-serif;
-    height: 100vh;
+@import url(/Component-Css/general.css);
+@import url(/Component-Css/header.css);
 
-  }
 
-:root{
-    --black-color: black;
-    --bg-color-1:#221C69;
-    --bg-color-2:#080942;
-    --bg-color-3:#431C76;
-    --bg-color-4:#663B94;
-  }
-  
 ol.list {
     list-style-type: upper-roman;
   }
 
 .container{
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: white;
     background: linear-gradient(var(--black-color),var(--bg-color-2),var(--black-color));
 }
 
-.header{
-    height: 10vh;
-    padding: 1rem;
-    font-size: 2rem;
-    text-shadow: 2px 2px 2px yellow;
-}
 .main-container{
     width: 60%;
     border: solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
@@ -66,14 +39,11 @@ ol.list {
     text-align: center;
     margin: 0.5rem; 
     width: 60%;  
-    display: flex;
     font-size: 1.2rem;
-    flex-direction: column;
     gap:1.5rem;
 }
 .answers{
-    display: flex;
-    flex-direction: column;
+    
     gap: 0.5rem;
 }
 .answers .option{
