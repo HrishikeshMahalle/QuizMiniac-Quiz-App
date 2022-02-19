@@ -1,0 +1,75 @@
+@import url(/Component-Css/general.css);
+@import url(/Component-Css/header.css);
+  
+ol.list {
+    list-style-type: upper-roman;
+  }
+
+.container{
+    height: auto;
+    color: white;
+    background: linear-gradient(var(--black-color),var(--bg-color-2),var(--black-color));
+}
+
+.main-container{
+    width: 60%;
+    border: solid;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-container .cont-subhead{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.question-cont{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem; 
+    width: 60%;  
+    font-size: 1.2rem;
+    gap:1.5rem;
+}
+.answers{
+    width: 80%;
+    gap: 0.5rem;
+}
+option{
+    border: 2px solid white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius:1.5rem ;
+}
+.option.sel{
+    border: 3px solid yellow;
+    color: yellow;
+}
+
+
+.question-cont img{
+    max-inline-size: 100%;
+    border-radius: 1rem;
+    block-size: auto;
+    aspect-ratio: 4/3;
+    object-fit: contain/cover;
+    object-position: top center;
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+a{
+    all: unset;
+}
+
+.cont-subhead-submit{
+    all: unset;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 40%;
+    text-align: center;
+    border: 2px solid yellow;
+    margin-bottom: 1rem;
+}
+
