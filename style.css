@@ -176,7 +176,7 @@
     color: white;
     padding: 1rem;
 }
-.category-cont .category-menu .menu-item:nth-child(2){
+.category-cont .category-menu .menu-item.active{
     border-bottom: 2px solid yellow;
     color: yellow;
 }
@@ -242,11 +242,6 @@
 }
 .card-item .btn-cont a{
     all: unset;
-    padding: 1rem;
-    color: white;
-    background-color: #221C69;
-    border-radius: 1rem;
-
 }
 
 
@@ -294,4 +289,30 @@
     width: 20%;
     text-align: center;
     font-size: 1.5rem;
+}
+
+.btn-cont{
+  cursor: pointer;
+}
+.menu-item{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 85%;
+  }
+  .alert-head{
+      text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 65%;
+  }
 }
